@@ -2,7 +2,7 @@
 
 <div align=center>
   
-<a href="https://modrinth.com/modpack/skadebifrost" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_46h.png" alt="Modrinth"></a>
+<a href="https://skadegaming.com/bifrost" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_46h.png" alt="Modrinth"></a>
 ![fabric](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/fabric_46h.png)
 ![compact_46h](https://github.com/user-attachments/assets/4499933b-2666-4112-8120-dae1d87d1464)
 
