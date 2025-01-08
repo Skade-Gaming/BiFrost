@@ -19,18 +19,17 @@ body:
       required: true
 
   - type: dropdown
-  attributes:
-    label: Launcher
-    description: Which launcher are you using?
-    options:
-      - CurseForge App
-      - Modrinth App
-      - Prism Launcher
-      - MultiMC
-      - Minecraft Launcher
-  validations:
-    required: true
-
+    attributes:
+      label: Launcher
+      description: Which launcher are you using?
+      options:
+        - CurseForge App
+        - Modrinth App
+        - Prism Launcher
+        - MultiMC
+        - Minecraft Launcher
+    validations:
+      required: true
 
   - type: textarea
     id: description
@@ -63,20 +62,19 @@ body:
       format: url  
 
   - type: dropdown
-  attributes:
-    label: priority
-    description: How severe is this issue?
-    options:
-      - Low: Minor issue, doesn't impact gameplay much.
-      - Medium: Noticeable issue, impacts gameplay but not game-breaking.
-      - High: Critical issue, game-breaking or severely disruptive.
-  validations:
-    required: true
+    attributes:
+      label: Priority
+      description: How severe is this issue?
+      options:
+        - Low: Minor issue, doesn't impact gameplay much.
+        - Medium: Noticeable issue, impacts gameplay but not game-breaking.
+        - High: Critical issue, game-breaking or severely disruptive.
+    validations:
+      required: true
 
-
-- type: checkboxes
-  attributes:
-    label: Please confirm the following before submitting the issue
-    options:
-      - label: I have checked the issue tracker for duplicates and the version of the modpack I used has not been modified.
-        required: true
+  - type: checkboxes
+    attributes:
+      label: Please confirm the following before submitting the issue
+      options:
+        - label: I have checked the issue tracker for duplicates and the version of the modpack I used has not been modified.
+          required: true
