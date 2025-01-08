@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug in the Minecraft modpack.
-title: "[Bug] Brief Description of the Issue"
+title: ""
 labels: ["bug"]
 body:
   - type: markdown

@@ -1,0 +1,57 @@
+name: Feature Request
+description: Request a new feature or mod for the Minecraft modpack.
+title: ""
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature for our Minecraft modpack! Please provide the details below to help us evaluate and implement your request.  
+        If this is a mod suggestion, include a link to the mod page (e.g., Modrinth or CurseForge).
+
+  - type: input
+    id: feature_title
+    attributes:
+      label: Feature Title
+      description: Provide a concise title for the feature or mod.
+      placeholder: "E.g., Add Mod XYZ or Improve GUI Layout"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Feature Description
+      description: Describe the feature or mod in detail. Why do you think it should be added? What benefits does it bring to the modpack?
+      placeholder: "Provide a detailed explanation of the feature or mod."
+    validations:
+      required: true
+
+  - type: input
+    id: mod_link
+    attributes:
+      label: Mod Link (Optional)
+      description: If suggesting a mod, provide a link to its official page (e.g., Modrinth or CurseForge).
+      placeholder: "e.g., https://modrinth.com/mod/xyz"
+    validations:
+      format: url
+
+  - type: dropdown
+    attributes:
+      label: Priority
+      description: How important is this feature or mod for the modpack?
+      options:
+        - Low: Nice to have, but not critical.
+        - Medium: Would enhance the gameplay experience.
+        - High: Essential for the modpack's improvement.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Please confirm the following before submitting your request
+      options:
+        - label: I have checked that this feature or mod is compatible with Fabric and aligns with the modpack's theme.
+          required: true
+        - label: I have provided a link or sufficient details to evaluate the feature or mod.
+          required: true
