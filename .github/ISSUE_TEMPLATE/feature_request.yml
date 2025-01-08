@@ -1,6 +1,5 @@
 name: Feature Request
 description: Request a new feature or mod for the Minecraft modpack.
-title: ""
 labels: ["enhancement"]
 body:
   - type: markdown
