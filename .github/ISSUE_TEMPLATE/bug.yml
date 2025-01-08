@@ -6,16 +6,32 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for reporting a bug in our modpack! Please provide the details below to help us identify and fix the issue.  
+        Thank you for reporting a bug in our Minecraft modpack! Please provide the details below to help us identify and fix the issue.  
         If you have logs, please use [https://mclo.gs/](https://mclo.gs/) to upload them for privacy and include the link below.
+
   - type: input
     id: modpack_version
     attributes:
       label: Modpack Version
-      description: Enter the version of the modpack you are using (e.g., 1.0.3).
-      placeholder: "e.g., 1.0.3"
+      description: Enter the version of the modpack you are using?
+      placeholder: "You can find the modpack version via Modrinth or your launcher."
     validations:
       required: true
+
+  - type: dropdown
+  attributes:
+    label: Launcher
+    description: Which launcher are you using?
+    options:
+      - CurseForge App
+      - Modrinth App
+      - Prism Launcher
+      - MultiMC
+      - Minecraft Launcher
+  validations:
+    required: true
+
+
   - type: textarea
     id: description
     attributes:
@@ -24,6 +40,7 @@ body:
       placeholder: "Provide a detailed description of the issue."
     validations:
       required: true
+
   - type: textarea
     id: steps_to_reproduce
     attributes:
@@ -35,26 +52,31 @@ body:
         3. ...
     validations:
       required: true
+
   - type: input
     id: log_file
     attributes:
       label: Log File (Optional)
       description: Paste the link to your log file uploaded to [https://mclo.gs/](https://mclo.gs/) here.
       placeholder: "e.g., https://mclo.gs/xyz123"
-  - type: textarea
-    id: anything_else
-    attributes:
-      label: Anything Else
-      description: Add any additional context, mod-specific information, or observations here.
-      placeholder: "Additional details, if any."
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How severe is this issue?
-      options:
-        - Low: Minor issue, doesn't impact gameplay much.
-        - Medium: Noticeable issue, impacts gameplay but not game-breaking.
-        - High: Critical issue, game-breaking or severely disruptive.
     validations:
-      required: true
+      format: url  
+
+  - type: dropdown
+  attributes:
+    label: priority
+    description: How severe is this issue?
+    options:
+      - Low: Minor issue, doesn't impact gameplay much.
+      - Medium: Noticeable issue, impacts gameplay but not game-breaking.
+      - High: Critical issue, game-breaking or severely disruptive.
+  validations:
+    required: true
+
+
+- type: checkboxes
+  attributes:
+    label: Please confirm the following before submitting the issue
+    options:
+      - label: I have checked the issue tracker for duplicates and the version of the modpack I used has not been modified.
+        required: true
