@@ -1,0 +1,60 @@
+name: Bug Report
+description: Report a bug in the Minecraft modpack.
+title: "[Bug] Brief Description of the Issue"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug in our modpack! Please provide the details below to help us identify and fix the issue.  
+        If you have logs, please use [https://mclo.gs/](https://mclo.gs/) to upload them for privacy and include the link below.
+  - type: input
+    id: modpack_version
+    attributes:
+      label: Modpack Version
+      description: Enter the version of the modpack you are using (e.g., 1.0.3).
+      placeholder: "e.g., 1.0.3"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Describe the bug in detail. What happens? What did you expect to happen instead?
+      placeholder: "Provide a detailed description of the issue."
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a step-by-step guide on how to reproduce the issue. Include as much detail as possible.
+      placeholder: |
+        1. Step one
+        2. Step two
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: log_file
+    attributes:
+      label: Log File (Optional)
+      description: Paste the link to your log file uploaded to [https://mclo.gs/](https://mclo.gs/) here.
+      placeholder: "e.g., https://mclo.gs/xyz123"
+  - type: textarea
+    id: anything_else
+    attributes:
+      label: Anything Else
+      description: Add any additional context, mod-specific information, or observations here.
+      placeholder: "Additional details, if any."
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How severe is this issue?
+      options:
+        - Low: Minor issue, doesn't impact gameplay much.
+        - Medium: Noticeable issue, impacts gameplay but not game-breaking.
+        - High: Critical issue, game-breaking or severely disruptive.
+    validations:
+      required: true
