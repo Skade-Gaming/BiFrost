@@ -17,3 +17,7 @@ Although primarily made for Skade Gaming, BiFrost can be used anywhere!
 Skade Gaming is a free online gaming community for Autistics (14+) and family members and friends. we offer a unique and engaging experience for those who are on the autism spectrum and their friends and family.
 
 You can find more about Skade Gaming and our goals on our website: [https://skadegaming.com/](https://skadegaming.com/)
+
+## Need help installing?
+
+[Check out the Installation Guide here!](https://github.com/Skade-Gaming/BiFrost/wiki/Installation-Guide)
